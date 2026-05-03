@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Button } from "../ui/button"
-import Image from "next/image"
 import WorkItem from "./workItem"
 
 const categories = ["Branding", "Packaging", "Video", "Illustration"]
@@ -25,6 +24,18 @@ const categoryHoverColors: Record<string, string> = {
 
 const Work = () => {
   const [selected, setSelected] = useState(categories[0])
+  const [isFading, setIsFading] = useState(false)
+
+  const handleCategoryChange = (item: string) => {
+    if (item === selected) return
+
+    setIsFading(true)
+
+    setTimeout(() => {
+      setSelected(item)
+      setIsFading(false)
+    }, 300)
+  }
 
   return (
     <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
@@ -39,7 +50,7 @@ const Work = () => {
           return (
             <Button
               key={item}
-              onClick={() => setSelected(item)}
+              onClick={() => handleCategoryChange(item)}
               className={`border transition-colors duration-300 ease-in-out ${
                 isActive
                   ? categoryColors[item]
@@ -52,15 +63,17 @@ const Work = () => {
         })}
       </div>
 
-      <div>
-        <div className="grid grid-cols-1 gap-15 md:grid-cols-2">
-          <WorkItem imageSrc="/images/rectangle1.png" />
-          <WorkItem imageSrc="/images/rectangle2.png" />
-          <WorkItem imageSrc="/images/rectangle1.png" />
-          <WorkItem imageSrc="/images/rectangle2.png" />
-          <WorkItem imageSrc="/images/rectangle1.png" />
-          <WorkItem imageSrc="/images/rectangle2.png" />
-        </div>
+      <div
+        className={`grid grid-cols-1 gap-15 transition-all duration-700 ease-in-out md:grid-cols-2 ${
+          isFading ? "opacity-0 blur-sm" : "blur-0 opacity-100"
+        }`}
+      >
+        <WorkItem imageSrc="/images/rectangle1.png" />
+        <WorkItem imageSrc="/images/rectangle2.png" />
+        <WorkItem imageSrc="/images/rectangle1.png" />
+        <WorkItem imageSrc="/images/rectangle2.png" />
+        <WorkItem imageSrc="/images/rectangle1.png" />
+        <WorkItem imageSrc="/images/rectangle2.png" />
       </div>
     </div>
   )
