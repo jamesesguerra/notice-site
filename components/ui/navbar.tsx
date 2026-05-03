@@ -11,8 +11,6 @@ import {
 
 import Image from "next/image"
 
-import Logo from "@/components/svg/logo"
-
 type NavigationItem = {
   title: string
   href: string
