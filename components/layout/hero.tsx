@@ -14,12 +14,14 @@ const Hero = () => {
                 src="/images/benner_icons-51.png"
                 width={50}
                 height={20}
+                alt="a green exclamation point"
                 priority
               />
               <Image
                 src="/images/benner_icons-52.png"
                 width={50}
                 height={20}
+                alt="a blue circle"
                 priority
               />
             </div>
@@ -30,6 +32,7 @@ const Hero = () => {
               src="/images/banner_design_icons-49.png"
               width={50}
               height={20}
+              alt="a yellow circle"
               priority
             />
             design ahead
@@ -37,6 +40,7 @@ const Hero = () => {
               src="/images/banner_design_icons-50.png"
               width={95}
               height={20}
+              alt="pink arrows"
               priority
             />
           </h3>
@@ -56,6 +60,7 @@ const Hero = () => {
         width={1597}
         height={598}
         className="h-auto w-full"
+        alt="an image of sodas"
       />
     </div>
   )

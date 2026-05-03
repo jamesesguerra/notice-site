@@ -15,15 +15,40 @@ const Footer = () => {
           </div>
 
           <div className="self-end">
-            <Image src="/images/footer_logo.png" width={250} height={250} />
+            <Image
+              src="/images/footer_logo.png"
+              width={250}
+              height={250}
+              alt="Notice Company logo"
+            />
           </div>
         </div>
 
         <div className="mt-20 mb-8 flex justify-center gap-3">
-          <Image src="/images/socials-57.png" width={30} height={30} />
-          <Image src="/images/socials-58.png" width={30} height={30} />
-          <Image src="/images/socials-59.png" width={30} height={30} />
-          <Image src="/images/socials-60.png" width={30} height={30} />
+          <Image
+            src="/images/socials-57.png"
+            width={30}
+            height={30}
+            alt="LinkedIn link"
+          />
+          <Image
+            src="/images/socials-58.png"
+            width={30}
+            height={30}
+            alt="Instagram link"
+          />
+          <Image
+            src="/images/socials-59.png"
+            width={30}
+            height={30}
+            alt="Email link"
+          />
+          <Image
+            src="/images/socials-60.png"
+            width={30}
+            height={30}
+            alt="Facebook link"
+          />
         </div>
 
         <div className="flex justify-center">
