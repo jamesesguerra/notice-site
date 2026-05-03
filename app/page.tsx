@@ -1,19 +1,40 @@
-import { Button } from "@/components/ui/button"
+import Navbar from "@/components/ui/navbar"
+import Hero from "@/components/layout/hero"
+import Work from "@/components/layout/work"
+import Philosophy from "@/components/layout/philosophy"
+import Services from "@/components/layout/services"
+import Footer from "@/components/layout/footer"
 
-export default function Page() {
+const navigationData = [
+  {
+    title: "Home",
+    href: "#",
+  },
+  {
+    title: "Products",
+    href: "#",
+  },
+  {
+    title: "About Us",
+    href: "#",
+  },
+  {
+    title: "Contacts",
+    href: "#",
+  },
+]
+
+const NavbarPage = () => {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div>
+      <Navbar navigationData={navigationData} />
+      <Hero />
+      <Work />
+      <Philosophy />
+      <Services />
+      <Footer />
     </div>
   )
 }
+
+export default NavbarPage
