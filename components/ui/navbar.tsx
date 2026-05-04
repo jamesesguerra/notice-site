@@ -46,18 +46,17 @@ const Navbar = () => {
 
         <div className="flex items-center gap-6">
           <div className="flex flex-1 items-center gap-8 font-medium md:justify-center lg:gap-16">
-            <a href="#" className="hover:text-primary max-md:hidden">
-              The Studio
-            </a>
-            <a href="#" className="hover:text-primary max-md:hidden">
-              The Work
-            </a>
-            <a href="#" className="hover:text-primary max-md:hidden">
-              Services
-            </a>
-            <a href="#" className="hover:text-primary max-md:hidden">
-              Get Started
-            </a>
+            {navigationData.map((item, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className="relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:-translate-x-1/2 after:bg-black after:transition-all after:duration-300 after:content-[''] hover:after:w-full max-md:hidden"
+                >
+                  {item.title}
+                </Link>
+              )
+            })}
           </div>
 
           <DropdownMenu>
