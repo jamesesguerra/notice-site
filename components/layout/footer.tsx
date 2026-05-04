@@ -1,6 +1,6 @@
 import { Button } from "../ui/button"
 import Image from "next/image"
-import MobileFooter from "./mobile-footer"
+import MobileFooter from "./mobileFooter"
 
 const Footer = () => {
   return (

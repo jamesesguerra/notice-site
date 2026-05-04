@@ -55,7 +55,8 @@ function ThemeHotkey() {
         return
       }
 
-      setTheme(resolvedTheme === "dark" ? "light" : "dark")
+      // setTheme(resolvedTheme === "dark" ? "light" : "dark")
+      setTheme("light")
     }
 
     window.addEventListener("keydown", onKeyDown)

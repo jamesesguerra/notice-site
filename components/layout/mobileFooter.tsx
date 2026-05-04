@@ -24,26 +24,26 @@ const MobileFooter = () => {
       <div className="mt-15 flex justify-center gap-7">
         <Image
           src="/images/socials-57.png"
-          width={70}
-          height={70}
+          width={60}
+          height={60}
           alt="LinkedIn link"
         />
         <Image
           src="/images/socials-58.png"
-          width={70}
-          height={70}
+          width={60}
+          height={60}
           alt="Instagram link"
         />
         <Image
           src="/images/socials-59.png"
-          width={70}
-          height={70}
+          width={60}
+          height={60}
           alt="Email link"
         />
         <Image
           src="/images/socials-60.png"
-          width={70}
-          height={70}
+          width={60}
+          height={60}
           alt="Facebook link"
         />
       </div>

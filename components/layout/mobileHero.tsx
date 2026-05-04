@@ -4,22 +4,22 @@ import { Button } from "../ui/button"
 const MobileHero = () => {
   return (
     <div className="py-5 md:hidden">
-      <div className="flex flex-col items-center font-museo text-8xl font-medium text-customCream">
+      <div className="flex flex-col items-center font-museo text-7xl font-medium text-customCream">
         <div>
           <div className="flex items-baseline gap-2">
             <h3>Great</h3>
             <div className="flex">
               <Image
                 src="/images/benner_icons-51.png"
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 alt="a green exclamation point"
                 priority
               />
               <Image
                 src="/images/benner_icons-52.png"
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 alt="a blue circle"
                 priority
               />
