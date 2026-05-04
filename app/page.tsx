@@ -7,19 +7,19 @@ import Footer from "@/components/layout/footer"
 
 const navigationData = [
   {
-    title: "Home",
+    title: "The Studio",
     href: "#",
   },
   {
-    title: "Products",
+    title: "The Work",
     href: "#",
   },
   {
-    title: "About Us",
+    title: "Services",
     href: "#",
   },
   {
-    title: "Contacts",
+    title: "Get Started",
     href: "#",
   },
 ]
