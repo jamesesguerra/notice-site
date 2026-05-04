@@ -6,6 +6,10 @@ import { cn } from "@/lib/utils"
 import Navbar from "@/components/ui/navbar"
 import Footer from "@/components/layout/footer"
 
+import { ViewTransitions } from "next-view-transitions"
+import PageTransition from "@/components/PageTransition"
+import ScrollManager from "@/components/ScrollManager"
+
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" })
 
 const museoModerno = MuseoModerno({
@@ -70,21 +74,24 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn(
-        "antialiased",
-        figtree.variable,
-        fontMono.variable,
-        museoModerno.variable
-      )}
-    >
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ViewTransitions>
+      <html
+        lang="en"
+        suppressHydrationWarning
+        className={cn(
+          "antialiased",
+          figtree.variable,
+          fontMono.variable,
+          museoModerno.variable
+        )}
+      >
+        <body>
+          <Navbar />
+          <ScrollManager />
+          <PageTransition>{children}</PageTransition>
+          <Footer />
+        </body>
+      </html>
+    </ViewTransitions>
   )
 }

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "next-view-transitions"
 
 type WorkItemProps = {
   imageSrc: string
@@ -7,7 +7,7 @@ type WorkItemProps = {
 
 const WorkItem = ({ imageSrc }: WorkItemProps) => {
   return (
-    <Link href="/our-work/tagine">
+    <Link href="/our-work/tagine" scroll={false}>
       <div className="overflow-hidden rounded-[40px]">
         <Image
           src={imageSrc}

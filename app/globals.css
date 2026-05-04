@@ -142,19 +142,43 @@
   font-family: var(--font-museo);
 }
 
-/* .text-orange {
-  color: #ff5c45;
+@supports (view-transition-name: none) {
+  @media not (prefers-reduced-motion: reduce) {
+    ::view-transition-old(page-content) {
+      animation: vt-fade-out 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    ::view-transition-new(page-content) {
+      opacity: 0;
+      animation: vt-fade-in 0.4s ease 0.2s forwards;
+      will-change: filter, opacity, transform;
+    }
+  }
 }
 
-.bg-orange {
-  background-color: #ff5c45;
-} */
-
-.text-20xl {
-  font-size: 200px !important;
+@keyframes vt-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.long-btn {
-  padding-right: 25px !important;
-  padding-left: 25px !important;
+@keyframes vt-fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateZ(0);
+  }
+  30% {
+    opacity: 0.5;
+    filter: blur(4px);
+    transform: translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateZ(0);
+  }
 }

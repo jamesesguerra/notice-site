@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "next-view-transitions"
 
 const Navbar = () => {
   const navigationData = [
@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 pt-6 pb-4 sm:px-6">
-        <Link href="/">
+        <Link href="/" scroll={false}>
           <Image
             src="/images/logo.png"
             alt="Notice Company logo"
