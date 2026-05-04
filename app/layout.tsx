@@ -1,4 +1,5 @@
 import { Geist_Mono, Figtree, MuseoModerno } from "next/font/google"
+import type { Metadata } from "next"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -17,6 +18,41 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  title: "Notice Company",
+  description:
+    "We craft identities, packaging, and digital worlds that stop scrolls, turn heads, and linger long after.",
+  openGraph: {
+    title: "Notice Company",
+    description:
+      "We craft identities, packaging, and digital worlds that stop scrolls, turn heads, and linger long after.",
+    url: "https://noticeco.vercel.app/",
+    siteName: "Notice Company",
+    images: [
+      {
+        url: "https://noticeco.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Notice Company",
+    description:
+      "We craft identities, packaging, and digital worlds that stop scrolls, turn heads, and linger long after.",
+    images: ["https://noticeco.vercel.app/og-image.png"],
+  },
+  keywords: [
+    "branding studio",
+    "graphic design",
+    "brand identity",
+    "packaging design",
+    "creative studio",
+  ],
+}
 
 export default function RootLayout({
   children,
