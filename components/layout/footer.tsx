@@ -17,8 +17,8 @@ const Footer = () => {
           <div className="self-end">
             <Image
               src="/images/footer_logo.png"
-              width={250}
-              height={250}
+              width={230}
+              height={230}
               alt="Notice Company logo"
             />
           </div>

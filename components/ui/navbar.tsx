@@ -26,7 +26,7 @@ const Navbar = ({ navigationData }: { navigationData: NavigationItem }) => {
             alt="notice co. logo"
             width={120}
             height={40}
-            className="h-auto w-full"
+            className="h-auto w-24 sm:w-28 md:w-32 lg:w-[120px]"
           />
         </a>
 
@@ -46,14 +46,14 @@ const Navbar = ({ navigationData }: { navigationData: NavigationItem }) => {
             </a>
           </div>
 
-          {/* <DropdownMenu>
-            <DropdownMenuTrigger className='md:hidden' asChild>
-              <Button variant='outline' size='icon'>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="md:hidden" asChild>
+              <Button variant="outline" size="icon">
                 <MenuIcon />
-                <span className='sr-only'>Menu</span>
+                <span className="sr-only">Menu</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className='w-56' align='end'>
+            <DropdownMenuContent className="w-56" align="end">
               <DropdownMenuGroup>
                 {navigationData.map((item, index) => (
                   <DropdownMenuItem key={index}>
@@ -62,7 +62,7 @@ const Navbar = ({ navigationData }: { navigationData: NavigationItem }) => {
                 ))}
               </DropdownMenuGroup>
             </DropdownMenuContent>
-          </DropdownMenu> */}
+          </DropdownMenu>
         </div>
       </div>
     </header>

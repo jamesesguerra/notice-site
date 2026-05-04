@@ -61,6 +61,7 @@ const Hero = () => {
         height={598}
         className="h-auto w-full"
         alt="an image of sodas"
+        priority
       />
     </div>
   )
