@@ -34,9 +34,7 @@ export default function RootLayout({
         museoModerno.variable
       )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
