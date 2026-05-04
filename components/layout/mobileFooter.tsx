@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "../ui/button"
+import Link from "next/link"
 
 const MobileFooter = () => {
   return (
@@ -22,34 +23,41 @@ const MobileFooter = () => {
       </div>
 
       <div className="mt-15 flex justify-center gap-7">
-        <Image
-          src="/images/socials-57.png"
-          width={60}
-          height={60}
-          alt="LinkedIn link"
-          priority
-        />
-        <Image
-          src="/images/socials-58.png"
-          width={60}
-          height={60}
-          alt="Instagram link"
-          priority
-        />
-        <Image
-          src="/images/socials-59.png"
-          width={60}
-          height={60}
-          alt="Email link"
-          priority
-        />
-        <Image
-          src="/images/socials-60.png"
-          width={60}
-          height={60}
-          alt="Facebook link"
-          priority
-        />
+        <Link href="https://www.linkedin.com/">
+          <Image
+            src="/images/socials-57.png"
+            width={60}
+            height={60}
+            alt="LinkedIn link"
+          />
+        </Link>
+
+        <Link href="https://www.instagram.com/">
+          <Image
+            src="/images/socials-58.png"
+            width={60}
+            height={60}
+            alt="Instagram link"
+          />
+        </Link>
+
+        <Link href="mailto:noticeco@gmail.com">
+          <Image
+            src="/images/socials-59.png"
+            width={60}
+            height={60}
+            alt="Email link"
+          />
+        </Link>
+
+        <Link href="https://www.facebook.com/">
+          <Image
+            src="/images/socials-60.png"
+            width={60}
+            height={60}
+            alt="Facebook link"
+          />
+        </Link>
       </div>
 
       <div className="flex justify-center py-5">

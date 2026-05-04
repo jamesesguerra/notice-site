@@ -1,6 +1,7 @@
 import { Button } from "../ui/button"
 import Image from "next/image"
 import MobileFooter from "./mobileFooter"
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -28,30 +29,41 @@ const Footer = () => {
           </div>
 
           <div className="mt-20 mb-8 flex justify-center gap-3">
-            <Image
-              src="/images/socials-57.png"
-              width={30}
-              height={30}
-              alt="LinkedIn link"
-            />
-            <Image
-              src="/images/socials-58.png"
-              width={30}
-              height={30}
-              alt="Instagram link"
-            />
-            <Image
-              src="/images/socials-59.png"
-              width={30}
-              height={30}
-              alt="Email link"
-            />
-            <Image
-              src="/images/socials-60.png"
-              width={30}
-              height={30}
-              alt="Facebook link"
-            />
+            <Link href="https://www.linkedin.com/">
+              <Image
+                src="/images/socials-57.png"
+                width={30}
+                height={30}
+                alt="LinkedIn link"
+              />
+            </Link>
+
+            <Link href="https://www.instagram.com/">
+              <Image
+                src="/images/socials-58.png"
+                width={30}
+                height={30}
+                alt="Instagram link"
+              />
+            </Link>
+
+            <Link href="mailto:noticeco@gmail.com">
+              <Image
+                src="/images/socials-59.png"
+                width={30}
+                height={30}
+                alt="Email link"
+              />
+            </Link>
+
+            <Link href="https://www.facebook.com/">
+              <Image
+                src="/images/socials-60.png"
+                width={30}
+                height={30}
+                alt="Facebook link"
+              />
+            </Link>
           </div>
 
           <div className="flex justify-center">

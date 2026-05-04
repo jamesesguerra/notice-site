@@ -9,25 +9,40 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 import Image from "next/image"
+import Link from "next/link"
 
-type NavigationItem = {
-  title: string
-  href: string
-}[]
+const Navbar = () => {
+  const navigationData = [
+    {
+      title: "The Studio",
+      href: "#",
+    },
+    {
+      title: "The Work",
+      href: "#",
+    },
+    {
+      title: "Services",
+      href: "#",
+    },
+    {
+      title: "Get Started",
+      href: "#",
+    },
+  ]
 
-const Navbar = ({ navigationData }: { navigationData: NavigationItem }) => {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 pt-6 pb-4 sm:px-6">
-        <a href="#">
+        <Link href="/">
           <Image
             src="/images/logo.png"
             alt="notice co. logo"
             width={120}
             height={40}
-            className="h-auto w-24 sm:w-28 md:w-32 lg:w-[120px]"
+            className="h-auto w-24 sm:w-28 md:w-32 lg:w-30"
           />
-        </a>
+        </Link>
 
         <div className="flex items-center gap-6">
           <div className="flex flex-1 items-center gap-8 font-medium md:justify-center lg:gap-16">

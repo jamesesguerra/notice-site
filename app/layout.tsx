@@ -2,8 +2,9 @@ import { Geist_Mono, Figtree, MuseoModerno } from "next/font/google"
 import type { Metadata } from "next"
 
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
+import Navbar from "@/components/ui/navbar"
+import Footer from "@/components/layout/footer"
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -70,7 +71,11 @@ export default function RootLayout({
         museoModerno.variable
       )}
     >
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
