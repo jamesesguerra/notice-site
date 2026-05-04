@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 type WorkItemProps = {
   imageSrc: string
@@ -6,14 +7,17 @@ type WorkItemProps = {
 
 const WorkItem = ({ imageSrc }: WorkItemProps) => {
   return (
-    <div>
-      <Image
-        src={imageSrc}
-        width={754}
-        height={495}
-        priority
-        alt="work image"
-      />
+    <Link href="/our-work/tagine">
+      <div className="overflow-hidden rounded-[40px]">
+        <Image
+          src={imageSrc}
+          width={754}
+          height={495}
+          priority
+          alt="work image"
+          className="transition-transform duration-500 ease-in-out hover:scale-105"
+        />
+      </div>
 
       <div className="mt-3 flex justify-between px-2">
         <h3 className="text-xl font-semibold">Project Name</h3>
@@ -32,7 +36,7 @@ const WorkItem = ({ imageSrc }: WorkItemProps) => {
       </div>
 
       <p className="pl-2 text-xs font-semibold text-orange-500">CLIENT</p>
-    </div>
+    </Link>
   )
 }
 

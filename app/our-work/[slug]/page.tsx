@@ -24,6 +24,7 @@ export default async function WorkDetailPage({
             height={1000}
             alt={item.projectName}
             className="w-full"
+            priority
           />
         ))}
       </div>

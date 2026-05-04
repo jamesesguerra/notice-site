@@ -72,7 +72,7 @@ const Work = () => {
       </div>
 
       <div
-        className={`grid grid-cols-1 gap-15 transition-all duration-700 ease-in-out md:grid-cols-2 ${
+        className={`grid grid-cols-1 gap-7 transition-all duration-700 ease-in-out md:grid-cols-2 md:gap-15 ${
           isFading ? "opacity-0 blur-sm" : "blur-0 opacity-100"
         }`}
       >
