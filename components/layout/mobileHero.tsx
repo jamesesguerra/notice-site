@@ -4,7 +4,7 @@ import { Button } from "../ui/button"
 const MobileHero = () => {
   return (
     <div className="py-5 md:hidden">
-      <div className="flex flex-col items-center font-museo text-7xl font-medium text-customCream">
+      <div className="flex flex-col items-center font-museo text-7xl font-medium text-orange">
         <div>
           <div className="flex items-baseline gap-2">
             <h3>Great</h3>
@@ -55,7 +55,7 @@ const MobileHero = () => {
           We craft identities, packaging, and digital worlds that stop scrolls,
           turn heads, and linger long after.
         </p>
-        <Button variant="secondary" size="xl">
+        <Button variant="default" size="xl">
           <span className="text-xl">Book a discovery call</span>
         </Button>
       </div>
