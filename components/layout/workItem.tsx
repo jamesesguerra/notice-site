@@ -18,7 +18,7 @@ const WorkItem = ({ imageSrc }: WorkItemProps) => {
       <div className="mt-3 flex justify-between px-2">
         <h3 className="text-xl font-semibold">Project Name</h3>
 
-        <div className="flex items-center gap-5 text-sm">
+        <div className="flex items-center gap-1 text-sm md:gap-5">
           <div>
             <span className="mx-2 inline-block h-3 w-px bg-orange-500" />
             <span>Illustration</span>
