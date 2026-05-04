@@ -37,10 +37,11 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src="/images/logo.png"
-            alt="notice co. logo"
+            alt="Notice Company logo"
             width={120}
             height={40}
             className="h-auto w-24 sm:w-28 md:w-32 lg:w-30"
+            priority
           />
         </Link>
 
