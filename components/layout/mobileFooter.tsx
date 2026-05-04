@@ -17,7 +17,7 @@ const MobileFooter = () => {
 
       <div className="flex justify-center">
         <Button variant="default" size="full">
-          <span className="py-6 text-2xl">Tell us about your brand</span>
+          <span className="py-6 text-xl">Tell us about your brand</span>
         </Button>
       </div>
 
