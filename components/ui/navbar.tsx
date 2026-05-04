@@ -1,4 +1,5 @@
 import { MenuIcon, SearchIcon } from "lucide-react"
+import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -48,10 +49,7 @@ const Navbar = ({ navigationData }: { navigationData: NavigationItem }) => {
 
           <DropdownMenu>
             <DropdownMenuTrigger className="md:hidden" asChild>
-              <Button variant="outline" size="icon">
-                <MenuIcon />
-                <span className="sr-only">Menu</span>
-              </Button>
+              <Menu className="h-12 w-12 stroke-orange" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56" align="end">
               <DropdownMenuGroup>

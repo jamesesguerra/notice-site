@@ -38,27 +38,35 @@ const Work = () => {
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
-      <div className="flex justify-center">
-        <h2 className="text-20xl font-museo font-bold">Our Works</h2>
+    <div className="mx-auto max-w-7xl px-4 pt-10 pb-20 sm:px-6 lg:pt-0">
+      <div className="flex justify-center pb-5">
+        <h2 className="font-museo text-5xl font-bold md:text-8xl lg:text-[200px]">
+          Our Work
+        </h2>
       </div>
 
-      <div className="-mt-[30px] mb-15 flex justify-center gap-5">
+      <div className="mb-15 flex justify-center gap-5">
         {categories.map((item) => {
           const isActive = selected === item
 
           return (
-            <Button
-              key={item}
-              onClick={() => handleCategoryChange(item)}
-              className={`border transition-colors duration-300 ease-in-out ${
-                isActive
-                  ? categoryColors[item]
-                  : `border-gray bg-transparent text-black ${categoryHoverColors[item]}`
-              }`}
-            >
-              {item}
-            </Button>
+            <div key={item}>
+              <div
+                onClick={() => handleCategoryChange(item)}
+                className={`h-20 w-20 cursor-pointer rounded-full border border-gray-400 transition-colors sm:hidden ${isActive ? categoryColors[item] : ""} `}
+              />
+
+              <Button
+                onClick={() => handleCategoryChange(item)}
+                className={`hidden border px-4 py-2 transition-colors duration-300 ease-in-out sm:flex ${
+                  isActive
+                    ? categoryColors[item]
+                    : `border-gray bg-transparent text-black ${categoryHoverColors[item]}`
+                } `}
+              >
+                {item}
+              </Button>
+            </div>
           )
         })}
       </div>

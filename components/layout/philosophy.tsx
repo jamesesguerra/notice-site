@@ -4,7 +4,7 @@ const Philosophy = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 pt-20 sm:px-6">
       <div className="flex justify-center">
-        <h2 className="font-museo text-9xl font-bold text-customGreen">
+        <h2 className="font-museo text-6xl font-bold text-customGreen md:text-7xl lg:text-9xl">
           Design Philosophy
         </h2>
       </div>
