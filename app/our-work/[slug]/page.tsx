@@ -23,7 +23,6 @@ export default async function WorkDetailPage({
               alt={item.projectName}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 754px"
               priority={index === 0}
             />
           </div>
