@@ -11,7 +11,7 @@ const MobileFooter = () => {
         alt="Notice Company logo"
         className="pt-20"
       />
-      <p className="py-10 font-museo text-6xl font-semibold text-customCream">
+      <p className="py-10 font-museo text-5xl font-semibold text-customCream">
         Start a project today and speak with our brand experts.
       </p>
 
@@ -27,24 +27,28 @@ const MobileFooter = () => {
           width={60}
           height={60}
           alt="LinkedIn link"
+          priority
         />
         <Image
           src="/images/socials-58.png"
           width={60}
           height={60}
           alt="Instagram link"
+          priority
         />
         <Image
           src="/images/socials-59.png"
           width={60}
           height={60}
           alt="Email link"
+          priority
         />
         <Image
           src="/images/socials-60.png"
           width={60}
           height={60}
           alt="Facebook link"
+          priority
         />
       </div>
 

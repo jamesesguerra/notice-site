@@ -53,7 +53,7 @@ const Work = () => {
             <div key={item}>
               <div
                 onClick={() => handleCategoryChange(item)}
-                className={`h-20 w-20 cursor-pointer rounded-full border border-gray-400 transition-colors sm:hidden ${isActive ? categoryColors[item] : ""} `}
+                className={`h-18 w-18 cursor-pointer rounded-full border border-gray-400 transition-colors sm:hidden ${isActive ? categoryColors[item] : ""} `}
               />
 
               <Button
