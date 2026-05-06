@@ -17,12 +17,13 @@ export default async function WorkDetailPage({
     <section className="mx-auto min-h-screen max-w-7xl pt-7 md:px-4 md:pb-20">
       <div className="flex flex-col">
         {item.images.map((img, index) => (
-          <div key={img} className="relative aspect-[16/9] w-full">
+          <div key={img} className="relative w-full">
             <Image
               src={img}
               alt={item.projectName}
-              fill
-              className="object-cover"
+              className="w-full"
+              width={1000}
+              height={1000}
               priority={index === 0}
             />
           </div>

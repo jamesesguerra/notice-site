@@ -7,7 +7,7 @@ export default function ScrollManager() {
   const pathname = usePathname()
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    // window.scrollTo({ top: 0, behavior: "auto" })
   }, [pathname])
 
   return null

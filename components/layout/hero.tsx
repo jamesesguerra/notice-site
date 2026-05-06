@@ -5,7 +5,7 @@ import MobileHero from "./mobileHero"
 
 const Hero = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 md:bg-transparent">
+    <div className="mx-auto max-w-7xl bg-orange px-4 py-7 sm:px-6 md:bg-transparent">
       <div className="hidden md:block">
         <div className="mb-15 flex">
           <div className="w-[70%] font-museo text-5xl font-medium text-orange md:text-6xl lg:text-7xl">
